@@ -9,3 +9,12 @@ checks:
   severity: Error
   vars:
     url: https://news.ycombinator.com
+
+- name: HTTP Test 2
+  service: Norbtest
+  checkrunner: http
+  severity: Error
+  vars:
+    url: https://news.ycombinator.com
+    expected: [400]
+
