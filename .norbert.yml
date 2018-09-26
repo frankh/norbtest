@@ -1,0 +1,11 @@
+services:
+- name: Norbtest
+  url: https://news.ycombinator.com
+
+checks:
+- name: HTTP Test
+  service: Norbtest
+  checkrunner: http
+  severity: Error
+  vars:
+    url: https://news.ycombinator.com
